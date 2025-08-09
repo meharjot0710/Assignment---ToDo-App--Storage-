@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-pane, .right-pane {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f4f4f4;
+}
+
+.task.completed span {
+  text-decoration: line-through;
+  color: green;
+}
+
+.task button {
+  margin-left: 5px;
+}
